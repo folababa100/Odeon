@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Odeon</title>
+</head>
+<body>
+    <div class="movie">
+        <p>Time</p>
+        <div id="section"></div>
+    </div>
+
+    <div class="chat__main">
+        <ol id="movie" class="chat__messages"></ol>
+
+    <script id="message-template" type="text/template">
+        <li class="message">
+            <div class="time__title">
+                <span>{{createdAt}}</span>
+            </div>
+            <div class="time__body">
+                <p>{{text}}</p>
+            </div>
+        </li>
+    </script>
+
+    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script src="js/libs/moment.js"></script>
+</body>
+</html>
